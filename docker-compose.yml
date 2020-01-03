@@ -1,0 +1,19 @@
+version: '3'
+services:
+  movim:
+    build: .
+    ports:
+      - "9000:9000"
+      - "8080:8080"
+    network_mode: "host"
+    environment:
+      MOVIM_ADMIN: admin
+      MOVIM_PASSWORD: password
+      MOVIM_DOMAIN: http://localhost
+      MOVIM_PORT: 8080
+      MOVIM_INTERFACE: 0.0.0.0
+      MYSQL_DB: movim
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: movim
+      MYSQL_PASSWORD: changeme
