@@ -14,12 +14,12 @@ fi
 cat <<EOT > config/db.inc.php
 <?php
 \$conf = [
-    'type'        => 'pgsql',
-    'database'    => '$POSTGRES_DB',
-    'host'        => '$POSTGRES_HOST',
-    'port'        => '$POSTGRES_PORT',
-    'username'    => '$POSTGRES_USER',
-    'password'    => '$POSTGRES_PASSWORD',
+    'type'        => 'mysql',
+    'database'    => '$MYSQL_DB',
+    'host'        => '$MYSQL_HOST',
+    'port'        => '$MYSQL_PORT',
+    'username'    => '$MYSQL_USER',
+    'password'    => '$MYSQL_PASSWORD',
 ];
 EOT
 
